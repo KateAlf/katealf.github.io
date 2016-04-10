@@ -10,31 +10,48 @@
 
 <body>
 
+  <!-- Header -->
   <header class="page-header">
     <div class="page-wrapper clearfix">
+      <button class="hamburger" type="button">
+        <span class="hamburger--box">
+          </span>
+      </button>
       <nav class="top-nav">
         <ul class="top-nav__list">
           <li class="top-nav__item"><a href="#" class="top-nav__link">Главная</a></li>
-          <li class="top-nav__item"><a href="#" class="top-nav__link">В чем фишка?</a></li>
-          <li class="top-nav__item"><a href="#" class="top-nav__link">Кто мы?</a></li>
-          <li class="top-nav__item"><a href="#" class="top-nav__link">Что внутри?</a></li>
-          <li class="top-nav__item"><a href="#" class="top-nav__link">Чего мы ищем?</a></li>
-          <li class="top-nav__item"><a href="#" class="top-nav__link">Контакты</a></li>
+          <li class="top-nav__item"><a href="#features" class="top-nav__link">В чем фишка?</a></li>
+          <li class="top-nav__item"><a href="#team" class="top-nav__link">Кто мы?</a></li>
+          <li class="top-nav__item"><a href="#screenshots" class="top-nav__link">Что внутри?</a></li>
+          <li class="top-nav__item"><a href="#needs" class="top-nav__link">Чего мы ищем?</a></li>
+          <li class="top-nav__item"><a href="#feedback" class="top-nav__link">Контакты</a></li>
         </ul>
       </nav>
     </div>
   </header>
-
+  <!--Intro Picture -->
   <div class="intro">
     <div class="page-wrapper clearfix">
       <h1 class="intro__title">"Профориентир - ежедневник для тех, кто хочет определиться"</h1>
-      <a href="" class="btn btn--intro">Узнать больше</a>
+      <!--      <a href="#" class="btn btn--intro">Узнать больше</a>-->
+
     </div>
   </div>
 
-
+  <!--Main Features -->
   <main>
-    <section class="page-section page-section--green">
+    <section class="page-section page-section--white">
+      <div class="page-wrapper clearfix">
+        <h2 class="page-section__title page-section__title--white">Коротко о главном</h2>
+        <div class="inshort-wrapper">
+          <img src="img/diary-screen.png" class="diary-screen">
+          <p class="page-section__text page-section__text--white"> Наблюдая за тем, как совершают выбор вуза сегодняшние абитуриенты, мы - преподаватели и психолог частной школы г. Волгограда, задумались о том, как помочь старшеклассникам сделать более осознанный выбор. Результатом наших поисков стал ежедневник "Профориентир", который планомерно подводит ученика к выбору будущей профессии.
+           <span>На самом деле, дневник не содержит готовых рекомендаций и не отвечает прямо на вопрос "Кем мне стать?". Он скорее задает именно те вопросы, которые помогают ученику осознать свои желания, правильно оценить свои возможности, грамотно сформулировать цели и задачи для их достижения.</span><span> Наш ежедневник - как искренний друг, который не станет давать непрошенных советов, но всегда готов выслушать.</span> </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section page-section--green" id="features">
       <div class="page-wrapper clearfix">
         <h2 class="page-section__title page-section__title--green">В чем фишка?</h2>
         <p class="page-section__text">Этот дневник - попытка переосмыслить процесс профориентации старшеклассников и дать им возможность самим определиться с направлением своей будущей деятельности. </p>
@@ -96,7 +113,7 @@
       </div>
     </section>
 
-    <section class="page-section page-section--beige">
+    <section class="page-section page-section--beige" id="team">
       <div class="page-wrapper clearfix">
         <h2 class="page-section__title page-section__title--beige">Кто мы?</h2>
         <p class="page-section__text page-section__text--beige">Мы - полная энтузиазма команда профессиональных педагогов и психологов, которые активно сотрудничают с детьми и действительно понимают их проблемы.
@@ -128,7 +145,7 @@
       </div>
     </section>
 
-    <section class="page-section page-section--yellow">
+    <section class="page-section page-section--yellow" id="screenshots">
       <div class="page-wrapper clearfix">
         <h2 class="page-section__title page-section__title--yellow">Что внутри?</h2>
         <p class="page-section__text page-section__text--yellow">Страницы нашего дневника. Это лишь малая толика всей прелести :) </p>
@@ -154,7 +171,7 @@
       </div>
     </section>
 
-    <section class="page-section page-section--purple">
+    <section class="page-section page-section--purple" id="needs">
       <div class="page-wrapper clearfix">
         <h2 class="page-section__title page-section__title--purple">Чего мы ищем?</h2>
         <p class="page-section__text">Нам нужна поддержка!</p>
@@ -179,7 +196,7 @@
       </div>
     </section>
 
-    <section class="page-section page-section--blue">
+    <section class="page-section page-section--blue" id="feedback">
       <div class="page-wrapper clearfix">
         <h2 class="page-section__title page-section__title--blue">Напишите нам</h2>
         <p class="page-section__text">Мы всегда рады новым идеям и предложениям!</p>
