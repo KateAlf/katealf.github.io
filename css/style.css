@@ -520,7 +520,8 @@ a {
 .page-section {
   margin: 0;
   background-size: 100%;
-  padding-top: 50px; }
+  padding-top: 50px;
+  position: relative; }
   .page-section--green {
     background-color: #17c2a4;
     min-height: 550px; }
@@ -598,6 +599,27 @@ a {
   .page-section__text {
     font-size: 16px;
     width: 90%; } }
+
+.arrow-top {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  width: 30px;
+  height: 30px;
+  transform: rotate(-90deg);
+  fill: white;
+  opacity: 0.4; }
+  .arrow-top--beige {
+    fill: #3c4761; }
+  .arrow-top--yellow {
+    fill: #393939; }
+  .arrow-top:hover {
+    opacity: 1; }
+
+@media (max-width: 767px) {
+  .arrow-top {
+    top: 35px;
+    left: 25px; } }
 
 .top-nav__link {
   display: block;
@@ -1046,3 +1068,11 @@ a {
 
 .span-fix {
   display: block; }
+
+.credits {
+  margin: 0 auto;
+  background-color: #273a71;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px; }
