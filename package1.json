@@ -1,0 +1,39 @@
+{
+  "name": "46165-sedona",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Личный проект «Седона» от HTML Academy",
+  "author": "Катерина Турапина",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:htmlacademy-adaptive/46165-sedona.git"
+  },
+  "bugs": {
+    "url": "https://github.com/htmlacademy-adaptive/46165-sedona/issues"
+  },
+  "homepage": "https://github.com/htmlacademy-adaptive/46165-sedona",
+  "devDependencies": {
+    "autoprefixer": "6.3.3",
+    "css-mqpacker": "^5.0.1",
+    "editorconfig-tools": "0.1.1",
+    "grunt": "0.4.5",
+    "grunt-browser-sync": "2.2.0",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-csso": "^1.0.0",
+    "grunt-postcss": "0.7.2",
+    "imagemin": "^5.2.2",
+    "load-grunt-tasks": "3.4.1",
+    "postcss-sorting": "^1.6.1",
+    "svgmin": "^0.1.0"
+  },
+  "scripts": {
+    "test": "editorconfig-tools check *",
+    "build": "grunt sass && grunt postcss",
+    "start": "npm run build && grunt serve"
+  },
+  "engines": {
+    "node": "^5.0.0"
+  }
+}
