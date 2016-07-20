@@ -585,7 +585,7 @@ body {
   left: calc(50% - ( 1140px /2));
   top: 30px;
   position: absolute;
-  z-index: 10;
+  z-index: 200;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1125,6 +1125,9 @@ body {
 }
 .equipment__consult:hover .equipment__consult-text {
   color: #71cbd3;
+}
+.equipment__consult--table {
+  display: none;
 }
 .slider {
   max-width: 1140px;
@@ -1758,6 +1761,7 @@ body {
   border: none;
   color: #fff;
   padding: 0;
+  z-index: 200;
   font-family: 'Proxima Nova', Arial, sans-serif;
   letter-spacing: .5px;
   font-weight: 400;
@@ -2196,13 +2200,14 @@ body {
     bottom: 0;
   }
   .main-menu {
+    min-width: 320px;
     display: none;
-    width: 767px;
-    min-height: 569px;
+    height: 1000px;
     position: relative;
     top: -30px;
+    left: 30px;
     background: url("../img/bg-footer.jpg") no-repeat top center #525250;
-    left: -152px;
+    background-size: cover;
     z-index: 100;
   }
   .main-menu__list {
@@ -2211,6 +2216,8 @@ body {
     justify-content: flex-start;
     font-size: 14px;
     z-index: 100;
+    padding-left: 50px;
+    padding-top: 210px;
   }
   .logo {
     display: none;
@@ -2317,9 +2324,8 @@ body {
     margin-bottom: 170px;
   }
   .house__slider {
-    outline: 1px solid red;
     width: 100%;
-    margin: 0px auto 120px auto;
+    margin: 0px auto 20px auto;
     padding: 35px 0 50px 0;
     min-height: 332px;
   }
@@ -2366,6 +2372,9 @@ body {
   }
   .equipment__row {
     flex-direction: column;
+  }
+  .equipment__title::before {
+    content: none;
   }
   .equipment__title {
     margin-left: 8.33333333%;
@@ -2452,6 +2461,9 @@ body {
   .slider__item {
     min-height: 538px;
     margin-top: 35px;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
   }
   .slider__title {
     width: 83.33333333%;
@@ -2664,23 +2676,6 @@ body {
     top: 55px;
     right: 20px;
   }
-  .house__slider .owl-carousel.owl-loaded {
-    background-color: #e7e7e7;
-    position: absolute;
-    top: 450px;
-    height: 280px;
-    overflow: hidden;
-  }
-  .house__slider .owl-carousel.owl-loaded .owl-nav {
-    display: none;
-  }
-  .house__slider .owl-carousel .owl-item {
-    width: 280px !important;
-    height: 253px !important;
-    margin-left: 0px;
-    margin-right: 50px !important;
-    margin-bottom: 50px;
-  }
   .popup__container {
     max-width: 767px;
   }
@@ -2772,6 +2767,7 @@ body {
     left: 30px;
     width: 738px;
     justify-content: flex-start;
+    z-index: 200;
   }
   .main-header__btn {
     display: block;
@@ -2802,15 +2798,40 @@ body {
     bottom: 0;
   }
   .main-menu {
+    min-width: 768px;
+    height: 1025px;
     display: none;
+    position: relative;
+    left: -250px;
+    right: 0;
+    top: -30px;
+    bottom: 0;
+    margin: 0 auto;
+    background: url("../img/bg-footer.jpg") no-repeat top center #525250;
+    background-size: cover;
+    left: -18%;
+    z-index: 100;
+  }
+  .main-menu__list {
+    margin-left: 8.33333333%;
+    padding-top: 343px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: 14px;
+    z-index: 100;
   }
   .logo {
-    width: 53px;
+    width: 65px;
     overflow: hidden;
+    z-index: 200;
   }
   .logo__pick {
     width: 227px;
     max-width: 227px;
+    z-index: 200;
   }
   .main__pick {
     background: url("../img/main-pick.jpg") no-repeat 34% 0 #4c5f31;
@@ -2985,6 +3006,10 @@ body {
   .equipment__consult {
     margin-left: 0;
     order: 2;
+  }
+  .equipment__consult--table {
+    display: block;
+    order: 4;
   }
   .slider {
     max-width: 1140px;
