@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+	<meta charset="UTF-8" />
+	<title>Index Page</title>
+
+	<script>
+		document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+	</script>
+
+	<link rel="stylesheet" href="css/style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- <link href="/favicon.ico" rel="icon" type="image/x-icon"> -->
+</head>
+
+<body>
+
+	<header class="main-header">
+		<div class="logo">
+			<img src="img/logo-header.png" width="278" height="64" alt="Логотип" class="logo__pick" />
+		</div>
+
+		<button class="main-header__btn" type="button">Открыть меню</button>
+
+		<nav class="main-menu">
+			<ul class="main-menu__list nav">
+				<li class="main-menu__item"><a href="#houses" class="main-menu__link">О проекте</a></li>
+				<li class="main-menu__item"><a href="#equipment" class="main-menu__link">Комплектация</a></li>
+				<li class="main-menu__item"><a href="#slider" class="main-menu__link">Фотогалерея</a></li>
+				<li class="main-menu__item"><a href="#advantages" class="main-menu__link">Преимущества</a></li>
+				<li class="main-menu__item"><a href="#feedback" class="main-menu__link">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+	<main class="main">
+		<section class="main__pick">
+			<div class="main__wrap">
+				<h1 class="main__title">Воплотите мечту о&nbsp;собственном загородном доме!</h1>
+				<button class="main__btn">Посмотреть проект</button>
+			</div>
+			<button type="button" class="call">+7(495) 999-99-99</button>
+		</section>
+
+
+		<section class="houses" id="houses">
+
+			<div class="houses__container">
+				<div class="houses__row">
+					<div class="houses__desc">ома выполнены по Канадской и Финской технологиям строительства энергоэфективных домов. Такой дом капитальный и долговечный. Отвечает всем требованиям СНИП по теплопроводности и шумоизоляции. Предназначен для постоянного проживания и относится к категории энергосберегающих. Наши дома строятся круглогодично, если не используются мокрые процессы. Выполним отделку по вашему желанию.</div>
+					<div class="houses__notice">Стоимость рассчитывается за&nbsp;один кв. м общей площади, в том числе террасы и&nbsp;балконы.</div>
+				</div>
+			</div>
+
+			<article class="houses__item house">
+				<div class="house__container">
+					<h2 class="house__title">Дом 117 кв. м</h2>
+				</div>
+
+				<div class="house__container">
+					<div class="house__pick"><img src="img/house-1.jpg" alt="Дом 117 кв. м" /></div>
+					<div class="house__data">
+						<table class="house__table">
+							<tr class="house__table-row">
+								<th class="house__table-head">Габаритные размеры</th>
+								<td class="house__table-data">7х8 м</td>
+							</tr>
+							<tr class="house__table-row">
+								<th class="house__table-head">Комнат</th>
+								<td class="house__table-data">3</td>
+							</tr>
+							<tr class="house__table-row">
+								<th class="house__table-head">Площадь 1-го этажа</th>
+								<td class="house__table-data">61 м<sup>2</sup></td>
+							</tr>
+							<tr class="house__table-row">
+								<th class="house__table-head">Площадь 2-го этажа</th>
+								<td class="house__table-data">56 м<sup>2</sup></td>
+							</tr>
+							<tr class="house__table-row">
+								<th class="house__table-head">Общая площадь</th>
+								<td class="house__table-data">80 м<sup>2</sup></td>
+							</tr>
+							<tr class="house__table-row">
+								<th class="house__table-head">Срок строительства</th>
+								<td class="house__table-data">от 60 дней</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="house__wrap">
+					<div class="house__container">
+						<div class="house__wrap-price">
+							<div class="house__price">Стоимость от&nbsp;1&nbsp;287&nbsp;000&nbsp;руб.</div>
+							<button class="house__btn" onclick="showForm()">Оставить заявку на покупку</button>
+						</div>
+
+						<div class="house__slider">
+							<div class="house__slider-item" data-title="План первого этажа" >
+								<img src="img/house-1/house-slide-1.jpg" title="План первого этажа" alt="План первого этажа" />
+							</div>
+							<div class="house__slider-item" data-title="План второго этажа" >
+								<img src="img/house-1/house-slide-2.jpg" title="План второго этажа" alt="План второго этажа" />
+							</div>
+							<div class="house__slider-item" data-title="Фасад, вид справа" >
+								<img src="img/house-1/house-slide-3.jpg" title="Фасад, вид справа" alt="Фасад, вид справа" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article class="houses__item house house--align-right">
+				<div class="house__container">
+					<h2 class="house__title">Вилла 182 кв. м</h2>
+				</div>
+
+				<div class="house__container">
+					<div class="house__pick"><img src="img/house-2.jpg" alt="Дом 117 кв. м" />
+					</div>
+					<div class="house__data">
+						<table class="house__table">
+							<tr class="house__table-row">
+								<th class="house__table-head">Габаритные размеры</th>
+								<td class="house__table-data">13х11 м</td>
+							</tr>
+							<tr class="house__table-row">
+								<th class="house__table-head">Комнат</th>
+								<td class="house__table-data">6</td>
+							</tr>
+							<tr class="house__table-row">
+								<th class="house__table-head">Площадь 1-го этажа</th>
+								<td class="house__table-data">102  м<sup>2</sup></td>
+							</tr>
+							<tr class="house__table-row">
+								<th class="house__table-head">Площадь 2-го этажа</th>
+								<td class="house__table-data">80  м<sup>2</sup></td>
+							</tr>
+							<tr class="house__table-row">
+								<th class="house__table-head">Общая площадь</th>
+								<td class="house__table-data">147  м<sup>2</sup></td>
+							</tr>
+							<tr class="house__table-row">
+								<th class="house__table-head">Срок строительства</th>
+								<td class="house__table-data">от 80 дней</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="house__wrap">
+					<div class="house__container">
+						<div class="house__wrap-price">
+							<div class="house__price">Стоимость от&nbsp;2&nbsp;002&nbsp;000&nbsp; руб.</div>
+							<button class="house__btn" onclick="showForm()">Оставить заявку на покупку</button>
+						</div>
+
+						<div class="house__slider">
+							<div class="house__slider-item" data-title="План первого этажа" >
+								<img src="img/house-2/house-slide-1.jpg" title="План первого этажа" alt="План первого этажа" />
+							</div>
+							<div class="house__slider-item" data-title="План второго этажа" >
+								<img src="img/house-2/house-slide-2.jpg" title="План второго этажа" alt="План второго этажа" />
+							</div>
+							<div class="house__slider-item" data-title="Фасад, вид сзади" >
+								<img src="img/house-2/house-slide-3.jpg" title="Фасад, виз сзади" alt="Фасад, виз сзади" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+
+		</section>
+
+
+		<section class="cloud">
+
+			<section class="equipment" id="equipment">
+				<h2 class="equipment__title">Наши дома можно заказать <span class="equipment__linebreak">в понравившейся Вам комплектации!</span></h2>
+
+				<div class="equipment__row">
+					<article class="equipment__card">
+						<h3 class="equipment__card-title">Базовая комплектация</h3>
+						<div class="equipment__card-desc">Строительство дома для постоянного проживания с частичной внутренней отделкой.</div>
+						<div class="equipment__card-price">От 11 000 руб за 1 кв. м</div>
+						<button type="button" class="equipment__card-btn" onclick="showKit()" >Подробнее</button>
+					</article>
+
+					<article class="equipment__card">
+						<h3 class="equipment__card-title">Дом под ключ</h3>
+						<div class="equipment__card-desc">Строительство дома для постоянного проживания с полной внешней и внутренней отделкой.</div>
+						<ul class="equipment__card-list">
+							<li>наружная покраска дома</li>
+							<li>отделка цоколя натуральном камнем</li>
+							<li>напольное покрытие (ламинат)</li>
+							<li>межкомнатные двери</li>
+							<li>лестница на 2-ой этаж</li>
+							<li>плинтуса и наличники</li>
+						</ul>
+						<div class="equipment__card-price">От 15 000 руб за 1 кв. м</div>
+						<button type="button" class="equipment__card-btn" onclick="showKit()">Подробнее</button>
+					</article>
+
+					<button type="button" class="equipment__consult" onclick="showForm()">
+						<span class="equipment__consult-icon"></span>
+						<span class="equipment__consult-text">Бесплатная консультация</span>
+					</button>
+				</div>
+			</section>
+
+
+			<section class="slider">
+				<h2 class="slider__title" id="slider">Дом, о котором <span>Вы давно мечтали!</span></h2>
+
+				<div class="slider__wrap">
+					<img src="img/slider/slide-1.jpg" alt="" class="slider__item" />
+					<img src="img/slider/slide-1.jpg" alt="" class="slider__item" />
+					<img src="img/slider/slide-1.jpg" alt="" class="slider__item" />
+				</div>
+				<div class="slider__counter">
+					<span class="slider__current-number">1</span>/<span class="slider__total-number">23</span>
+				</div>
+			</section>
+
+		</section>
+
+
+		<section class="advantages" id="advantages">
+			<div class="advantages__container">
+				<h2 class="advantages__title">Преимущества</h2>
+
+				<div class="advantages__row">
+					<div class="advantages__desc">
+						Каркасные дома очень удобны как для сезонного, так и для постоянного проживания.
+						<br />Возвести полноценный дом или дачу можно в течение всего одного сезона. И получать удовольствие от загородной жизни сразу после строительства. Легко возводимая конструкция позволяет увеличить функциональность постройки в любое время. Владелец каркасного дома может без ограничений расширять и модернизировать свой дом. Например, пристроив гараж или мансарду.
+					</div>
+
+					<div class="advantages__item advantages__item--time">
+						<h3 class="advantages__item-title">Быстро и надежно</h3>
+						<div class="advantages__item-desc">
+							Каркасная технология позволяет строить в любое время года за 2-3 месяца. Использование облегченного фундамента низкого залегания дает значительную экономию и скорость строительства. Технология не требует привлечения специальной техники, гарантирует низкую вероятность разрушения и конструкционных ошибок.
+						</div>
+					</div>
+
+					<div class="advantages__item advantages__item--eco">
+						<h3 class="advantages__item-title">Комфортно и экологично</h3>
+						<div class="advantages__item-desc">
+							В каркасных домах можно гибко использовать систему отопления.
+							<br />С 5 до 20 градусов дом прогревается менее, чем за час.
+						</div>
+					</div>
+
+					<div class="advantages__item advantages__item--unique">
+						<h3 class="advantages__item-title">Практично и уникально</h3>
+						<div class="advantages__item-desc">
+							Легкость и всесезонность отделки. Стены, пол и потолок уже готовы к отделке. Возможно использовать широкий спектр отделочных материалов и придать дому абсолютно любой дизайн.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="discount">
+			<div class="discount__container">
+				<h2 class="discount__title">Успейте получить скидку!</h2>
+				<div class="discount__row">
+					<div class="discount__desc">
+						Ваше мнение очень важно для нас! Оставьте отзыв о нашем проекте, и Вы получите скидку в размере 5% на строительство дома до 31 сентября 2016г.
+					</div>
+				</div>
+
+				<div class="discount__wrap">
+					<div class="discount__value">5%</div>
+					<div class="discount__counter">
+						<div class="discount__counter-title">До конца акции осталось</div>
+
+						<div class="discount__counter-wrap">
+							<div class="discount__counter-item">
+								<span class="discount__counter-item-days">05</span>
+								<span class="discount__counter-item-title">Дней</span>
+							</div>
+							<div class="discount__counter-item">
+								<span class="discount__counter-item-hours">26</span>
+								<span class="discount__counter-item-title">Часов</span>
+							</div>
+							<div class="discount__counter-item">
+								<span class="discount__counter-item-minutes">49</span>
+								<span class="discount__counter-item-title">Минут</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<button type="button" class="discount__btn" onclick="showForm()">Заказать проект со скидкой</button>
+			</div>
+		</section>
+
+
+		<section class="feedback" id="feedback">
+			<div class="feedback__container">
+				<div class="feedback__row">
+					<div class="feedback__info">
+						<div class="feedback__desc">
+							троительство каркасных домов осуществляется по всей Московской области и соседних областях, преимущественно в городах Красногорск, Одинцово, Долгопрудный, Королев, Мытищи, Ивантеевка, Пушкино, Софрино, Дмитров, Яхрома, Истра, Зеленоград, Ногинск, Сергиев Посад, Александров, Переславль-Залеский, Калязин и другие.
+						</div>
+						<div class="feedback__call">
+							<div class="feedback__call-title">Звоните нам!</div>
+							<div class="feedback__call-phone">+7 (495) 999-99-99</div>
+							<div class="feedback__call-btn" onclick="showForm()">Заказать обратный звонок</div>
+						</div>
+					</div>
+					<div class="feedback__btns">
+						<div class="feedback__btns-title">Мы в социальных сетях</div>
+						<a href="#" class="feedback__btn social-btn social-btn--vk">Вконтакте</a>
+						<a href="#" class="feedback__btn social-btn social-btn--fb">Facebook</a>
+						<a href="#" class="feedback__btn social-btn social-btn--ok">Одноклассники</a>
+						<a href="#" class="feedback__btn social-btn social-btn--mp">Карта</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+
+	<footer class="main-footer">
+		<div class="main-footer__container">
+			<div class="main-footer__nav">
+				<ul class="main-footer__list nav">
+					<li class="main-footer__item"><a href="#houses" class="main-footer__link">О проекте</a></li>
+					<li class="main-footer__item"><a href="#equipment" class="main-footer__link">Комплектация</a></li>
+					<li class="main-footer__item"><a href="#slider" class="main-footer__link">Фотогалерея</a></li>
+					<li class="main-footer__item"><a href="#advantages" class="main-footer__link">Преимущества</a></li>
+					<li class="main-footer__item"><a href="#feedback" class="main-footer__link">Контакты</a></li>
+				</ul>
+			</div>
+
+			<div class="main-footer__logo">
+				<img src="img/logo-footer.png" alt="Проектирование и строительство домов" class="main-footer__logo-pick" />
+			</div>
+
+			<div class="main-footer__row">
+				<div class="main-footer__info">
+					<div class="main-footer__info-copy">2016 ©, «Каркасный дом»</div>
+					<div class="main-footer__info-desc">
+						Копирование информации без письменного разрешения запрещено!
+						<br />Вся информация на сайте представлена в ознакомительных целях и не является публичной офертой.
+						<br />Для уточнения информации обращайтесь по телефонам в разделе Контакты.
+					</div>
+					<div class="main-footer__info-develop">Разработка <a href="#">Workray</a></div>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+
+	<div class="totop" id="totop" title="Вверх!">Вверх!</div>
+
+	<div class="popup popup--hide">
+		<div class="popup__container">
+			<div class="popup__title">Заявка на покупку дома</div>
+			<div class="popup__desc">Оставьте Ваш телефон, и наши менеджеры свяжутся с вами в ближайшее время!</div>
+			<form action="/" method="POST" class="popup__form" id="form">
+				<div class="popup__wrap">
+					<input type="text" class="popup__input" name="name" placeholder="Ваше имя" />
+				</div>
+				<div class="popup__wrap">
+					<input type="text" class="popup__input" name="phone" placeholder="Ваш телефон" />
+				</div>
+				<div class="popup__wrap">
+					<button class="popup__btn" type="submit">Отправить заявку</button>
+				</div>
+			</form>
+		</div>
+		<button class="popup__close" onclick="closeForm()">Закрыть</button>
+	</div>
+
+	<div class="kit kit--hide">
+		<div class="kit__container">
+			<div class="kit__title">Комплектация «Базовая»</div>
+			<div class="kit__desc">Стоимость с полной отделкой — от  11 000 руб. за кв. м</div>
+			<table class="kit__table">
+				<tr>
+					<th>Фундамент</th>
+					<td>Мелкозаглубленный свайно-ростверковый (ленточный) сечением 400х600. </td>
+				</tr>
+				<tr>
+					<th>Каркас стен </th>
+					<td>Сухая доска 150х40мм антисептирована шагом 590мм, с диагональными раскосами.  </td>
+				</tr>
+				<tr>
+					<th>Перекрытия </th>
+					<td>Сухая доска 200х50мм или 150х50 антисептирована с шагом 400мм и 5 90мм, черновой пол 1-го этажа из доски 150х25мм. Покрытие под чистовое покрытие полов из доски 150х25мм. и березовой фанеры 12мм.  Вся древесина антисептирована.</td>
+				</tr>
+				<tr>
+					<th>Крыша </th>
+					<td>Стропила из сухой доски 150х50мм, Гидроизоляция Изоспан АМ, контр обрешетка 50х50мм, обрешетка 150х25мм. Вся древесина антисептирована. </td>
+				</tr>
+				<tr>
+					<th>Кровля </th>
+					<td>Ондулин, металлочерепица, профнастил на выбор. </td>
+				</tr>
+				<tr>
+					<th>Окна  </th>
+					<td>ПВХ 5камерный профиль, стеклопакет с двойным стеклом, подоконники, откосы, отливы.  </td>
+				</tr>
+				<tr>
+					<th>Утепление стен и перекрытий   </th>
+					<td>Внешние стены 150мм Роквул, внутренне перегородки 100мм Роквул, пол 1-го этажа 180мм Технониколь пол 2-го этажа 100мм Технониколь, потолок 2- го этажа 150мм Технониколь, Пароизоляция Изоспан В </td>
+				</tr>
+				<tr>
+					<th>Наружная отделка </th>
+					<td>Плиты OSB+имитация бруса или вагонка Штиль, без покраски.</td>
+				</tr>
+			</table>
+			<button class="kit__close" onclick="closeKit()">Закрыть</button>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/script.min.js"></script>
+
+</body>
+</html>
+
