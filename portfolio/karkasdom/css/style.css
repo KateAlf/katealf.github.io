@@ -2003,7 +2003,7 @@ body {
 }
 .popup__desc {
   width: 470px;
-  font-seiz: 18px;
+  font-size: 18px;
   line-height: 24px;
   margin-bottom: 40px;
 }
@@ -2164,7 +2164,7 @@ body {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .main-header {
-    width: 767px;
+    width: 320px;
     left: -63px;
   }
   .main-header__btn {
@@ -2354,13 +2354,15 @@ body {
   .cloud {
     background-position: right;
     background-size: cover;
-    min-height: 2300px;
+    min-height: 2000px;
+    justify-content: flex-start;
   }
   .equipment {
     max-width: 767px;
   }
   .equipment {
     min-height: 1275px;
+    flex-grow: 0;
   }
   .equipment__row {
     flex-direction: column;
@@ -2425,7 +2427,31 @@ body {
     max-width: 767px;
   }
   .slider {
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
     padding: 0;
+    position: relative;
+  }
+  .slider__counter {
+    font-size: 18px;
+  }
+  .slider__wrap {
+    width: 91.66666667%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    margin-left: 8.33333333%;
+  }
+  .slider__total-number {
+    top: 5px;
+  }
+  .slider__item {
+    min-height: 538px;
+    margin-top: 35px;
   }
   .slider__title {
     width: 83.33333333%;
@@ -2436,11 +2462,15 @@ body {
     font-size: 30px;
     line-height: 36px;
     margin-bottom: 0;
-    padding-top: 100px;
+    padding-top: 0px;
+    text-align: center;
   }
   .slider__title span {
     display: inline-block;
     text-align: center;
+  }
+  .slider .owl-nav {
+    display: none;
   }
   .advantages {
     background: none;
@@ -2454,6 +2484,9 @@ body {
     font-size: 22px;
     line-height: 32px;
     letter-spacing: 5px;
+  }
+  .advantages__title::before {
+    display: none;
   }
   .advantages__desc {
     width: 83.33333333%;
@@ -2631,17 +2664,17 @@ body {
     top: 55px;
     right: 20px;
   }
-  .owl-carousel.owl-loaded {
+  .house__slider .owl-carousel.owl-loaded {
     background-color: #e7e7e7;
     position: absolute;
     top: 450px;
     height: 280px;
     overflow: hidden;
   }
-  .owl-carousel.owl-loaded .owl-nav {
+  .house__slider .owl-carousel.owl-loaded .owl-nav {
     display: none;
   }
-  .owl-carousel .owl-item {
+  .house__slider .owl-carousel .owl-item {
     width: 280px !important;
     height: 253px !important;
     margin-left: 0px;
@@ -2651,13 +2684,93 @@ body {
   .popup__container {
     max-width: 767px;
   }
+  .popup__input {
+    margin-left: 8.33333333%;
+  }
+  .popup__title {
+    margin-left: 8.33333333%;
+    font-size: 27px;
+    line-height: 36px;
+  }
+  .popup__desc {
+    width: 83.33333333%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    margin-left: 8.33333333%;
+    font-size: 16px;
+  }
+  .popup__btn {
+    width: 83.33333333%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    margin-left: 8.33333333%;
+  }
+  .popup__close {
+    top: 20px;
+    right: 20px;
+  }
   .kit__container {
     max-width: 767px;
+  }
+  .kit__container {
+    width: 91.66666667%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+  }
+  .kit__title {
+    font-family: 'Proxima Nova', Arial, sans-serif;
+    letter-spacing: .5px;
+    font-weight: 30px;
+    font-size: 24px;
+  }
+  .kit__desc {
+    width: 83.33333333%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    font-family: 'Proxima Nova', Arial, sans-serif;
+    letter-spacing: .5px;
+    font-weight: 30px;
+    font-size: 18px;
+  }
+  .kit__table {
+    width: 91.66666667%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+  }
+  .kit__table th {
+    display: none;
+    font-family: 'Proxima Nova', Arial, sans-serif;
+    letter-spacing: .5px;
+    font-weight: 30px;
+    font-size: 18px;
+  }
+  .kit__table td {
+    padding: 20px 20px;
+  }
+  .kit__table td:before {
+    content: attr(data-label);
+    display: block;
+    font-family: 'Proxima Nova', Arial, sans-serif;
+    letter-spacing: .5px;
+    font-weight: 30px;
+    font-size: 18px;
+    font-weight: bold;
   }
 }
 @media (min-width: 768px) and (max-width: 1140px) {
   .main-header {
     left: 30px;
+    width: 738px;
     justify-content: flex-start;
   }
   .main-header__btn {
@@ -2781,10 +2894,17 @@ body {
     width: 100%;
   }
   .house__wrap-price {
+    width: 50%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
     margin-left: 54%;
     width: auto;
     margin-right: 8%;
     margin-bottom: 500px;
+    padding-left: 40px;
+    border-left: 1px solid #dddddd;
   }
   .house__price {
     font-size: 30px;
@@ -2794,32 +2914,45 @@ body {
     font-size: 14px;
   }
   .house--align-right .house__wrap-price {
-    width: 58.33333333%;
+    width: 50%;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
     float: left;
     float: right;
-    margin-left: 200px;
+    margin-left: 100px;
+    margin-right: 0;
+    padding-left: 40px;
   }
   .house--align-right .house__data {
-    width: 83.33333333%;
+    width: 100%;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
     float: left;
-    margin-left: 8.33333333%;
+    padding-left: 70px;
+    margin-right: 0;
   }
   .house--align-right .house__pick {
-    right: 0;
+    width: 100%;
+    float: right;
+    margin-right: 0;
     left: 8.3%;
+  }
+  .cloud {
+    min-height: 2385px;
+    justify-content: flex-start;
   }
   .equipment {
     max-width: 1140px;
   }
+  .equipment {
+    flex-grow: 0;
+  }
   .equipment__row {
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 0;
   }
   .equipment__title::before {
     content: none;
@@ -2838,6 +2971,7 @@ body {
     padding-right: 15px;
     padding-left: 15px;
     float: left;
+    margin-left: 8.33333333%;
     margin: 0 auto 30px 60px;
     padding-left: 35px;
   }
@@ -2845,6 +2979,7 @@ body {
     order: 1;
   }
   .equipment__card:nth-child(2) {
+    margin-left: 60px;
     order: 3;
   }
   .equipment__consult {
@@ -2854,16 +2989,44 @@ body {
   .slider {
     max-width: 1140px;
   }
+  .slider {
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .slider__wrap {
+    width: 83.33333333%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    margin-left: 8.33333333%;
+  }
+  .slider__total-number {
+    top: 7px;
+    right: 2px;
+  }
+  .slider__item {
+    min-height: 538px;
+    margin-top: 35px;
+  }
   .slider__title {
     width: 83.33333333%;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
     float: left;
+    margin: 0 auto;
+    text-align: center;
     font-size: 48px;
-    line-height: 36px;
-    margin-bottom: 0;
-    padding-top: 100px;
+    line-height: 60px;
+    padding-top: 350px;
   }
   .advantages__container {
     max-width: 1140px;
@@ -3001,28 +3164,45 @@ body {
     top: 60px;
     right: 30px;
   }
-  .owl-carousel {
+  .house__slider .owl-carousel {
     background-color: #e7e7e7;
     margin-bottom: 0;
     padding-bottom: 50px;
     padding-top: 50px;
   }
-  .owl-carousel.owl-loaded {
+  .house__slider .owl-carousel.owl-loaded {
     background-color: #e7e7e7;
     position: absolute;
     height: 272px;
     overflow: hidden;
   }
-  .owl-carousel.owl-loaded .owl-nav {
+  .house__slider .owl-carousel.owl-loaded .owl-nav {
     display: none;
   }
-  .owl-carousel .owl-item {
+  .house__slider .owl-carousel .owl-item {
     width: 260px !important;
     height: 270px !important;
     margin-right: 50px !important;
   }
   .popup__container {
     max-width: 1140px;
+  }
+  .popup__input {
+    margin-left: 8.33333333%;
+  }
+  .popup__title {
+    margin-left: 8.33333333%;
+    font-size: 40px;
+    line-height: 24px;
+  }
+  .popup__desc {
+    margin-left: 8.33333333%;
+  }
+  .popup__btn {
+    margin-left: 8.33333333%;
+  }
+  .popup__close {
+    top: 40px;
   }
   .kit__container {
     max-width: 1140px;
