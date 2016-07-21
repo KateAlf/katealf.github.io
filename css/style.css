@@ -367,6 +367,12 @@ body {
   width: 320px;
   margin: 0px auto 50px auto; }
 
+.page-header {
+  display: block;
+  padding-top: 30px;
+  margin-right: 100px;
+  float: right; }
+
 .intro-wrapper {
   display: flex;
   flex-direction: row;
@@ -374,7 +380,7 @@ body {
   margin: 0 auto 50px auto;
   justify-content: center;
   width: 90%;
-  padding-top: 50px; }
+  padding-top: 10px; }
 
 .skills-wrapper {
   display: flex;
@@ -585,6 +591,12 @@ body {
     font-size: 18px;
     font-weight: bold;
     margin-left: 15px; }
+  .link--lang {
+    font-size: 18px;
+    margin-right: 5px; }
+  .link--current {
+    color: #737373;
+    text-decoration: underline; }
 
 .copyrights {
   border-top: 1px solid #a6a6a6;
