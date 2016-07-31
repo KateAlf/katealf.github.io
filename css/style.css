@@ -624,6 +624,8 @@ body {
   .item {
     width: 30%; } }
   @media (max-width: 767px) {
+  .page-header {
+    margin-right: 30px; }
   .intro-wrapper {
     margin: 0 auto 20px auto;
     flex-direction: row-reverse;
