@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="keywords" content="HTML/CSS верстальщик, верстка сайтов, адаптивная верстка, фронтендер">
-  <meta name="description" content="Кроссбраузерная и адаптивная верстка сайтов, семантичный подход">
+  <meta name="description" content="Crossbrowser and apadtive html layouts, semantics">
   <meta name="author" content="Katerina Turapina">
   <meta name="copyright" content="Katerina Turapina">
   <meta name="robots" content="index, follow">
@@ -31,7 +31,7 @@
       <section class="intro-wrapper">
         <h1 class="title title--info">Katerina Turapina</h1>
         <div class="avatar">
-          <img class="avatar__pic" src="img/avatar.jpg" alt="Личное фото" width="300" />
+          <img class="avatar__pic" src="img/avatar1.jpg" alt="Katerina Turapina" width="300" />
         </div>
         <div class="info">
 
@@ -72,6 +72,7 @@
             <li class="skills__item">BEM</li>
             <li class="skills__item">SCSS/Less</li>
             <li class="skills__item">Grunt</li>
+            <li class="skills__item">Git</li>
             <li class="skills__item">SVG-icons</li>
             <li class="skills__item">Responsive layouts</li>
             <li class="skills__item">Retina-images</li>
@@ -83,6 +84,7 @@
             <li class="skills__item">Javascript</li>
             <li class="skills__item">JS-libraries (e.g. jQuery)</li>
             <li class="skills__item">HTML-template engines (e.g. Jade/Pug)</li>
+            <li class="skills__item">SVG (animation, masks, etc.)</li>
             <li class="skills__item">CSS frameworks (e.g. Bootstrap)</li>
             <li class="skills__item">React.js (long-term plan)</li>
           </ul>
@@ -94,10 +96,10 @@
         <h2 class="title title--portfolio">Portfolio</h2>
         <div class="portfolio-grid">
 
-          <div class="item">
-            <img src="img/proforientir.jpg" alt="Профориентир" class="item__img" width="100">
-            <b class="item__title">Adaptive Startup Landing</b>
-            <p class="item__text">April, 2016</p>
+          <div class="portfolio-item">
+            <img src="img/proforientir.jpg" alt="Профориентир" class="portfolio-item__img" width="100">
+            <b class="portfolio-item__title">Adaptive Startup Landing</b>
+            <p class="portfolio-item__text">April, 2016</p>
             <div class="item-info">
               <a href="http://proforientir.github.io/" class="link link--item" target="_blank">Demo</a>
               <a href="https://github.com/proforientir" class="link link--item" target="_blank">Code</a>
@@ -106,10 +108,10 @@
           </div>
 
 
-          <div class="item">
-            <img src="img/sedona.jpg" alt="Sedona" class="item__img" width="100">
-            <b class="item__title">Adaptive tourist agency web-site</b>
-            <p class="item__text">April, 2016</p>
+          <div class="portfolio-item">
+            <img src="img/sedona.jpg" alt="Sedona" class="portfolio-item__img" width="100">
+            <b class="portfolio-item__title">Adaptive tourist agency web-site</b>
+            <p class="portfolio-item__text">April, 2016</p>
             <div class="item-info">
               <a href="portfolio/sedona/index.html" class="link link--item">Demo</a>
               <a href="https://github.com/KateAlf/46165-sedona" class="link link--item" target="_blank">Code</a>
@@ -117,31 +119,30 @@
             </div>
           </div>
 
-          <div class="item">
-            <img src="img/gllacy.jpg" alt="Gllacy" class="item__img" width="100">
-            <b class="item__title">Ice-cream parlour website</b>
-            <p class="item__text">February, 2016</p>
+          <div class="portfolio-item">
+            <img src="img/gllacy.jpg" alt="Gllacy" class="portfolio-item__img" width="100">
+            <b class="portfolio-item__title">Ice-cream parlour website</b>
+            <p class="portfolio-item__text">February, 2016</p>
             <div class="item-info">
               <a href="img/gllacy_big.jpg" class="link link--item" target=" _blank">Template</a>
               <p class="item-info__text">Tools: Floats+Flexbox, fluid layout (900-1200px), BEM, CSS-slider</p>
             </div>
           </div>
 
-          <div class="item">
-            <img src="img/technomart.jpg" alt="Техномарт" class="item__img" width="100">
-            <b class="item__title">Internet shop website</b>
-            <p class="item__text">October, 2015</p>
+          <div class="portfolio-item">
+            <img src="img/technomart.jpg" alt="Техномарт" class="portfolio-item__img" width="100">
+            <b class="portfolio-item__title">Internet shop website</b>
+            <p class="portfolio-item__text">October, 2015</p>
             <div class="item-info">
               <a href="img/technomart_big.jpg" class="link link--item" target="_blank">Template</a>
-
               <p class="item-info__text">Tools: floats/inline-block, fixed layout</p>
             </div>
           </div>
 
-          <div class="item">
-            <img src="img/nerds.jpg" alt="Nerds" class="item__img" width="100">
-            <b class="item__title">Web desing studio website</b>
-            <p class="item__text">June, 2015</p>
+          <div class="portfolio-item">
+            <img src="img/nerds.jpg" alt="Nerds" class="portfolio-item__img" width="100">
+            <b class="portfolio-item__title">Web desing studio website</b>
+            <p class="portfolio-item__text">June, 2015</p>
             <div class="item-info">
               <a href="portfolio/nerds/index.html" class="link link--item" target="_blank">Demo</a>
               <a href="https://github.com/KateAlf/nerds" class="link link--item" target="_blank">Code</a>
@@ -149,9 +150,8 @@
             </div>
           </div>
 
-          <div class="item item--empty">
-            <p class="item-info__text item-info__text--empty">To be continued...</p>
-          </div>
+          <!-- <div class="portfolio-item item--empty">
+          </div> -->
         </div>
       </section>
 
@@ -162,7 +162,7 @@
         <p class="misc__text">Dmitry Lebedev and I translated <a class="link" href="https://svgontheweb.com/ru/" target="_blank">SVG on The Web</a> </p>
         <p class="misc__text">Translation of Ire Aderinokun's article <a class="link" href="https://htmlacademy.ru/blog/94-the-vertical-align-property" target="_blank">The Vertical-align Property</a></p>
 
-        <p class="misc__text">I enjoy travelling (already have visited the USA, the UK, Germany, Czech Republic, Austria and Abkhazia)</p>
+        <p class="misc__text">I enjoy travelling (already have visited  Abkhazia, Austria, the Czech Republic, Germany, the UK and the USA)</p>
 
 
       </section>
