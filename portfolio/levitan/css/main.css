@@ -929,7 +929,7 @@ h4 {
         font-size: 14px;
     }
     h2 {
-        font-size: 26px;
+        font-size: 20px;
     } 
     h4 {
         font-size: 16px;
@@ -947,8 +947,37 @@ h4 {
     a.btn {
         display: block;
         width: 160px;
+    }
+    
+    #about .container {
+        width: 100%;
+    }
+    #about .about__photo {
+        display: none;
+    }
+    #consult .content {
+        flex-direction: column;
+    }
+    .consult__man, .consult__woman {
+        width: 100%;
+     }
+     #consult .btn {
+    width: 180px;
+    align-items: center; 
+    }
+    .license {
+        flex-direction: column;
+    }
+    .license>a {
+        width: 100%;
+    }
+    #zapis h2 {
+        width: 100%;
+        margin-top: 40px;
+    }
+    #zapis__form .btn {
+        margin-top: 40px;
+    }
 
     }
- 
-}
 
