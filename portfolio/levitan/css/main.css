@@ -917,6 +917,10 @@ h4 {
         display: none;
     }
 
+    .container {
+        padding: 30px;
+    }
+
      .content-wrap {
          width: 100vw; 
      }
@@ -926,17 +930,17 @@ h4 {
         background-position: 65%;
      }
      h1 {
-        font-size: 14px;
+        font-size: 22px;
     }
     h2 {
         font-size: 20px;
     } 
     h4 {
-        font-size: 16px;
+        font-size: 18px;
     }
     #home .container {
         width: 75%;
-        padding-left: 20px;
+        padding: 40px 40px;
     }
     .home__info p {
         font-size: 14px;
@@ -960,10 +964,16 @@ h4 {
     }
     .consult__man, .consult__woman {
         width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
      }
+
      #consult .btn {
-    width: 180px;
+    
     align-items: center; 
+    }
+    #consult .container>p {
+        width: 100%;
     }
     .license {
         flex-direction: column;
