@@ -17,6 +17,12 @@
 </head>
 
 <body>
+    <div style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+           <symbol id="icon-close"><path d="M1 15L15 1M1 1l14 14" stroke="#295d7a" stroke-width="2"/></symbol>    
+        </svg>
+  </div>
+
 
     <div class="main-wrap">
         <div class="sidebar">
@@ -37,7 +43,8 @@
             </ul>
             <div class="sidebar__contacts">
                 <a href="tel:+79284005532" class="sidebar__tel">+7 (928) 400-55-32</a>
-                <div class="sidebar__social">
+                                
+                     <div class="sidebar__social">
                     <a href="#"><img src="img/vk-white.svg"></a>
                     <a href="#"><img src="img/inst-white.svg"></a>
                     <a href="#"><img src="img/whatsapp-white.svg"></a>
@@ -45,6 +52,13 @@
                     <a href="#"><img src="img/viber-white.svg"></a>
                 </div>
             </div>
+            <div class="sidebar__hamburger">
+        <button class="hamburger" type="button">
+              <span class="hamburger--box">
+              </span>
+              </button>
+
+      </div>
         </div>
         <div class="content-wrap">
 
@@ -91,7 +105,7 @@
                     <div class="content">
                         <div class="spec__item">
                             <h4>Общая урология</h4>
-                            <a href="#">Мочекаменная болезнь</a>
+                            <a href="#" class="js-modal">Мочекаменная болезнь</a>
                             <a href="#">Кисты почек</a>
                             <a href="#">Гидронефроз</a>
                             <a href="#">Опухоль мочевого пузыря </a>
@@ -367,52 +381,6 @@
                 </div>
             </section>
 
-            <!-- <section id="license">
-                <div class="container">
-                    <h2><span class="accent-color">Лицензии</span> и&nbsp;сертификаты</h2>
-                    <div class="content">
-
-                        <div class="license">
-                            <div>
-                                <div class="license__img"></div>
-                            </div>
-                            <div>
-                                <div class="license__img"></div>
-                            </div>
-                            <div>
-                                <div class="license__img"></div>
-                            </div>
-                            <div>
-                                <div class="license__img"></div>
-                            </div>
-                            <div>
-                                <div class="license__img"></div>
-                            </div>
-                            <div>
-                                <div class="license__img"></div>
-                            </div>
-                            <div>
-                                <div class="license__img"></div>
-                            </div>
-                            <div>
-                                <div class="license__img"></div>
-                            </div>
-                            <div>
-                                <div class="license__img"></div>
-                            </div>
-                            <div>
-                                <div class="license__img"></div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </section>
- -->
-
-            <!-- Запись -->
-
             <section id="zapis">
                 <div class="container">
                     <h2>Оставьте заявку и&nbsp;я&nbsp;подберу вам удобное время посещения</h2>
@@ -421,22 +389,27 @@
                             <input type="text" placeholder="Ф.И.О">
                             <input class="masked-input-tel" type="text" placeholder="Телефон">
                             <button class="btn" type="submit">Отправить</button>
-                            <p class="small-text">Я&nbsp;ознакомился с&nbsp;<a href="">политикой конфиденциальности</a>. Отправляя данные, я&nbsp;даю согласие на&nbsp;обработку персональных данных</p>
+                            <p class="small-text">Я&nbsp;ознакомился с&nbsp;<a href="policy.html">политикой конфиденциальности</a>. Отправляя данные, я&nbsp;даю согласие на&nbsp;обработку персональных данных</p>
                         </form>
 
                     </div>
 
                 </div>
             </section>
+            
+            <div class="modal">
+      <button class="modal__close" type="button">
+                    <svg class="modal__close-svg" width="16" height="16">
+                      <use xlink:href="#icon-close"></use>
+                    </svg>
+                  </button>
+      <h1>Мочекаменная болезнь </h1>
+      <h2>Кисты почек</h2>
+      <p>Простая киста почки — это жидкостное образование круглой формы, как правило располагающееся в нижнем полюсе. На сегодняшний день есть много теорий образования кист. Статистика заболевания весьма печальна: у каждого четвертого мужчины старше 45 лет может быть диагностирована киста почки. Как правило, это будет случайная находка при проведении УЗИ без каких-либо клинических проявлений.
 
+      </p>
 
-
-
-
-
-            <!-- <section id="part3"></section>
-            <section id="part4"></section>
-            <section id="part5"></section> -->
+    </div>
 
         </div>
     </div>
