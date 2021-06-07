@@ -1,26 +1,3 @@
-//Для попапа
-
-
-var modal = document.querySelector('.modal');
-var modalControl = document.querySelector('.js-modal');
-var close = document.querySelector('.modal__close');
-
-modalControl.onclick = function() {
-  modal.classList.add('modal--open');
-};
-
-close.addEventListener("click", function(event) {
-  event.preventDefault();
-  modal.classList.remove('modal--open');
-});
-
-window.addEventListener("keydown", function(event) {
-    if (event.keyCode == 27) {
-      if (modal.classList.contains("modal--open")) {
-        modal.classList.remove("modal--open");
-      };
-    };
-  });
 
   //Гамбургер
 
@@ -52,6 +29,30 @@ jQuery(window).scroll(function() {
         }
     })
 });
+
+//Для попапа
+
+
+var modal = document.querySelector('.modal');
+var modalControl = document.querySelector('.js-modal');
+var close = document.querySelector('.modal__close');
+
+modalControl.onclick = function() {
+  modal.classList.add('modal--open');
+};
+
+close.addEventListener("click", function(event) {
+  event.preventDefault();
+  modal.classList.remove('modal--open');
+});
+
+window.addEventListener("keydown", function(event) {
+    if (event.keyCode == 27) {
+      if (modal.classList.contains("modal--open")) {
+        modal.classList.remove("modal--open");
+      };
+    };
+  });
 
 jQuery(window).scroll(function() {
     var $sections = $('section');
