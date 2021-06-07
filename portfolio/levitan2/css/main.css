@@ -634,12 +634,6 @@ h4 {
 
 /* Отзывы */
 
-.otzyv-wrap {
-    /* display: flex;
-    align-items: stretch;
-    align-content: stretch; */
-}
-
 .otzyv-wrap .owl-stage {
     display: flex;
 }
@@ -733,16 +727,6 @@ h4 {
 .fancybox-slide--image .fancybox-content {
     transition-duration: 0s !important;
 }
-
-
-/* .fancybox-button {
-    background-color: var(--accent);
-}
-
-.fancybox-button:hover {
-    background-color: var(--acccent-active);
-} */
-
 
 /* Запись */
 
@@ -924,19 +908,6 @@ h4 {
     left: 0;
     margin-top: -16px;
 }
-
-
-/* .slider-nav__prev {
-    position: relative;
-    left: -56px;
-}
-
-.slider-nav__next {
-    position: relative;
-    right: -56px;
-} */
-
-
 
 @media (min-width: 1024px) {
     h1 {
