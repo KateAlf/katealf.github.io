@@ -806,6 +806,59 @@ h4 {
 }
 
 
+.modal {
+  display: none;
+}
+
+.modal--open {
+  position: fixed;
+  top: 10%;
+  right: 0;
+  bottom: 0;
+  left: 10%;
+  display: block;
+  padding: 30px;
+  overflow: auto;
+  z-index: 50;
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+}
+
+.close {
+  display: none;
+}
+
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 21px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  -webkit-transition: 0.3s opacity;
+  transition: 0.3s opacity;
+}
+
+.modal__close:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.3s opacity;
+  transition: 0.3s opacity;
+}
+
+@media (max-width: 500px) {
+  .modal__close {
+    right: 5px;
+  }
+}
+
+.modal__close-svg {
+  opacity: 0.5;
+}
+
+
 /* Owl */
 
 .owl-theme .owl-dots {
@@ -913,16 +966,155 @@ h4 {
  }
 
  @media (max-width: 767px) {
-     .sidebar {
-        display: none;
-    }
+   .main-wrap {
+    flex-direction: column;
+  }
+
+  .sidebar__about,
+  .sidebar__social,
+  .sidebar__nav {
+    display: none;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .sidebar {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    z-index: 50;
+    background: var(--grad);
+  }
+  
+  .sidebar__contacts {
+    width: 45%;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: ;
+  }
+  
+  a.sidebar__tel,
+  .sidebar > div > img {
+    margin-bottom: 0;
+  }
+  
+  a.sidebar__tel, a.sidebar__tel:hover, a.sidebar__tel:visited {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .top-nav-show {
+    display: block;
+  }
+
+  .sidebar__nav {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .sidebar__nav ul {
+    background: var(--grad);  
+    margin-top: -50px;
+  }
+   
+   .sidebar__nav>li {
+     text-align: center;
+   }
+  
+   .sidebar__logozone {
+     width: 40%;
+   }
+  
+  .sidebar__hamburger {
+    display: block;
+    width: 27px;
+    min-height: 25px;
+    position: relative;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: block;
+    width: 27px;
+    height: 21px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: none;
+    margin: 0;
+    padding: 0;
+  }
+  .hamburger--box {
+    position: absolute;
+    top: 9px;
+    right: 0px;
+    z-index: 10;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transition: background 0 0.3s;
+  }
+  .hamburger--box::before,
+  .hamburger--box::after {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    content: '';
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: 0.3s, 0;
+  }
+  .hamburger--box::before {
+    top: -8px;
+    transition-property: top, transform;
+  }
+  .hamburger--box::after {
+    bottom: -8px;
+    transition-property: bottom, transform;
+  }
+  .hamburger:focus {
+    outline: none;
+  }
+  .hamburger.active .hamburger--box {
+    background-color: transparent;
+  }
+  .hamburger.active .hamburger--box::before {
+    top: 0;
+    transform: rotate(45deg);
+    background-color: white;
+  }
+  .hamburger.active .hamburger--box::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+    background-color: white;
+  }
+  .hamburger.active .hamburger--box::after,
+  .hamburger.active .hamburger--box::before {
+    transition-delay: 0, 0.3s;
+  }
 
     .container {
         padding: 30px;
     }
 
      .content-wrap {
-         width: 100vw; 
+         width: 100%; 
      }
 
      #home {
@@ -946,12 +1138,16 @@ h4 {
         font-size: 14px;
     }
     .home__offer p {
-        color: var(--dark);
+       display: none;
     }
     a.btn {
         display: block;
-        width: 160px;
     }
+   
+  .home__btn-mouse {
+    width: 250px;
+    margin-top: 40px;
+  }
     
     #about .container {
         width: 100%;
@@ -969,9 +1165,9 @@ h4 {
      }
 
      #consult .btn {
-    
-    align-items: center; 
+       align-items: center; 
     }
+   
     #consult .container>p {
         width: 100%;
     }
@@ -988,9 +1184,6 @@ h4 {
     #zapis__form .btn {
         margin-top: 40px;
     }
-    .content {
-        overflow: hidden;
-    }
 
     }
-
+    
