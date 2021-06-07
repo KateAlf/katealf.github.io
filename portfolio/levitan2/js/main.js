@@ -22,7 +22,6 @@ window.addEventListener("keydown", function(event) {
     };
   });
 
-
   //Гамбургер
 
 var menu = document.querySelector(".hamburger");
@@ -50,7 +49,6 @@ jQuery(window).scroll(function() {
         if (scroll > top && scroll < bottom) {
             $('a.active').removeClass('active');
             $('a[href="#' + id + '"]').addClass('active');
-
         }
     })
 });
@@ -142,6 +140,4 @@ $(document).ready(function() {
             dots: true
         })
     });
-
-
 });
